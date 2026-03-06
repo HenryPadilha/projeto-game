@@ -2,7 +2,7 @@ const readline = require("readline-sync");
 
 console.log("Bem vindo ao jogo de adivinhação");
 
-const numeroSecreto = 10; 
+const numeroSecreto = Math.floor(Math.random() * 10) + 1;; 
 let tentativa = "";
 let tentativas = 0;
 
@@ -27,4 +27,4 @@ while (tentativa != numeroSecreto) {
     }
 }
 
-//release/1.0.0
+//release/1.0.0 
